@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Książki</title>
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+       <div class="header-container">
+            <div class="header-container-main container">
+                <div class="logo">
+                    <img src="img/logo-new.png" alt="logo MGGPaero">
+                </div>
+                    
+                <div class="login-button">    
+                    <div class="button"><a href=#>Zaloguj się</a></div>
+                    <div class="button"><a href=#>Rejestracja</a></div>
+                    <div class="button"><a href=#>Wyloguj się</a></div>
+                </div>
+            </div>
+            
+            <div>
+                <h3>Zacznij się wkońcu uczyć... ;)</h3> 
+            </div>  
+        </div>    
+   </header>
+    
+    <main>        
+        
+        <div class="top-name container">
+            <h1>Biblioteka</h1>
+                             
+        </div>
+            
+        <div class="row container">    
+            <div class="main-btn">
+                <div class="search-btn">
+                    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Szukaj.. " title="Wyszukaj tytuł">
+                        <div class="search-icons">    
+                            <i class="search-icon fas fa-search"></i>
+                            <i class="search-icon fas fa-times"></i>
+                        </div>
+                </div>  
+                    
+                <div id="menu" class="main-sort-btn">
+                    <button id="sortBtn" class="sort-btn">
+                        <a href="#">Kategorie</a>
+                            <i class="sort-icon fas fa-chevron-up"></i>  
+                        
+                            <ul class="sort-choice">
+                                <li><a href=#>CSS</a></li>
+                                <li><a href=#>HTML</a></li>
+                                <li><a href=#>JavaScript</a></li>
+                                <li><a href=#>Python</a></li>
+                                <li><a href=#>C++</a></li>
+                                <li><a href=#>C#</a></li>
+                                <li><a href=#>IT</a></li>
+                                <li><a href=#>Inne</a></li>
+                            
+                            </ul>    </button> 
+                    
+                </div>
+            </div> 
+            <div class="box">
+                
+                
+                    <div class="image-bgr"><div class="shadow-image"></div>
+                </div>
+               
+                <h2>Wykaz książek</h2>
+                <div class="line">
+                    <hr class="one">
+                    <hr class="two">
+                    <hr class="three">
+                    <hr class="four">
+                </div>
+                
+                <div class="main-book">
+                    <div class="image">
+                        <img src="img/Wykrywaj I reaguj.jpg">
+                    </div>
+                
+                    <div class="book-inf">
+                        <div class="title-book">
+                            <h2>Wykrywaj i reaguj. Praktyczny monitoring sieci dla administratorów</h2>
+
+                        </div>
+
+                            <!-- <div class="calendar">
+                                <input id="datepicker" type="date">
+                                
+                            </div> -->
+
+                        <div class="button-others"> 
+                            <div class="others-btn button">
+                                <a>wypożyczona</a>
+                            </div>
+                            <div class="others-btn button"><a>rezerwacja</a></div>
+                        </div>  
+                    </div>
+                </div>
+            
+
+                <div class="main-book">
+                    <div class="image">
+                        <img src="img/Praktyczna analiza pakietów. Wykorzystanie narzędzia Wireshark do rozwiązywania problemów związanych z siecią.jpg">
+                    </div>
+                
+                    <div class="book-inf">
+                        <div class="title-book">
+                            <h2>Praktyczna analiza pakietów. Wykorzystanie narzędzia Wireshark do rozwiązywania problemów związanych z siecią</h2>
+
+                        </div>
+
+                            <div class="calendar">
+                                <input id="datepicker" type="date">
+                                
+                            </div>
+
+                        <div class="button-others"> 
+                            <div class="others-btn button">
+                                <a>wypożyczona</a>
+                            </div>
+                            <div class="others-btn button"><a>rezerwacja</a></div>
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="main-book">
+                    <div class="image">
+                        <img src="img/Profesjonalne testy penetracyjne.jpg">
+                    </div>
+                
+                    <div class="book-inf">
+                        <div class="title-book">
+                            <h2>Profesjonalne testy penetracyjne</h2>
+
+                        </div>
+
+                            <div class="calendar">
+                                <input id="datepicker" type="date">
+                                
+                            </div>
+
+                        <div class="button-others"> 
+                            <div class="others-btn button">
+                                <a>wypożyczona</a>
+                            </div>
+                            <div class="others-btn button"><a>rezerwacja</a></div>
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="main-book">
+                    <div class="image">
+                        <img src="img/Metasploit. Receptury pentestera.jpg">
+                    </div>
+                
+                    <div class="book-inf">
+                        <div class="title-book">
+                            <h2>Metasploit. Receptury pentestera</h2>
+
+                        </div>
+
+                            <div class="calendar">
+                                <input id="datepicker" type="date">
+                                
+                            </div>
+
+                        <div class="button-others"> 
+                            <div class="others-btn button">
+                                <a>wypożyczona</a>
+                            </div>
+                            <div class="others-btn button"><a>rezerwacja</a></div>
+                        </div>  
+                    </div>
+                </div>
+            
+        
+            </div>
+        
+        </div>
+
+    </main>
+
+   <footer>
+
+   </footer>
+
+<script src="main.js"></script>
+</body>
+</html>

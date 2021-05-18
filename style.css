@@ -1,0 +1,375 @@
+body{
+    font-family: 'EB Garamond', serif;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.header-container{
+    background: url(./img/tło.png);
+    height: 400px;
+    width: 100vw;
+    /* background-repeat: repeat-x; */
+    background-size: cover;
+}
+.header-container-main{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 75px;
+}
+
+/* .header-container-shadow {
+    width:100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+} */
+h1{
+    font-family: 'Bebas Neue', serif;
+    /* font-family: 'EB Garamond', serif; */
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 1.133;
+    color: rgb(28,57,53);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+    margin: 5px 0;
+}
+
+h3{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.133;
+    color: rgb(144,153,134);
+    text-align: center;
+    margin: 0;
+}
+
+.logo{
+    width: 200px;
+    height: 50px;
+}
+
+.login-button{
+    display: flex;
+}
+
+.button a{
+    color: rgb(203,181,156);
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid rgb(144,153,134);
+    padding: 10px;
+    margin: 0 20px;
+    background-color: rgb(28,57,53);
+}
+
+.button a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+
+.row{
+    border: 1px solid green;
+    
+}
+
+.main-btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-btn{
+    margin: 10px;
+    position: relative;
+}
+
+#mySearch{
+    width: 300px;
+    font-size: 18px;
+    padding: 11px;
+    color: rgb(28,57,53);
+    border: 1px solid rgb(28,57,53);
+    outline: none;
+    font-family: 'EB Garamond', serif;
+    
+}
+
+#mySearch:hover{
+    border: 1px solid rgb(28,57,53);
+}
+
+.search-icons{
+    position: absolute;
+    top: 15px;
+    right: 13px;
+}
+
+
+.search-icon{
+    font-size: 15px;
+    color: rgb(173 173 173 / 62%);
+    padding-right: 5px;
+}
+
+.fas-fa-search{
+    content: "\f002";
+}
+
+.fas-fa-times{
+    content: "\f00d";
+}
+
+#myMenu{
+    padding: 0;
+    height: 200px;
+}
+
+
+.sort-btn{
+    display: flex;
+    position: relative;
+    width: 324px;
+    flex-direction: column;
+    background-color: rgb(153,104,72);
+    border: none;
+}
+
+.sort-btn a,
+.sort-btn.show a{
+    font-size: 18px;
+    padding: 11px;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+}
+
+/* .sort-btn a:hover{
+    color: rgb(29, 133, 119);
+} */
+
+.main-sort-btn{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 10px;
+}
+
+
+.sort-icon{
+    font-size: 15px;
+    color: rgb(173 173 173 / 62%);
+    padding-right: 5px;
+    /* display: flex;
+    flex-direction: column; */
+    position: absolute;
+    top: 15px;
+    right: 14px;
+}
+
+.fas-fa-chevron-up{
+    content: "\f077";
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+.sort-btn.show .sort-icon{
+    transform: rotate(180deg);
+    right: 20px;
+}
+
+
+.sort-choice {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    width: 100%;
+    
+}
+
+.sort-choice li{
+    padding: 1px 1px;
+    letter-spacing: 1px;
+    /* background-color: rgba(52, 114, 85, 0.7); */
+
+}
+
+.sort-btn .menu-btn {
+    display: none;
+}
+
+
+#menu::before,
+#menu::after{
+    content: '';
+    display: table;
+}
+
+#menu::after{
+    clear: both;
+}
+
+#menu .sort-btn.show li{
+    float: none;    
+    box-shadow: 1px 0 0 #444;
+    position: relative;
+    z-index: 1;
+}
+
+/* #menu li:hover > a{
+    background: rgba(6, 121, 82, .3);
+} */
+
+#menu .sort-btn.show ul {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    /* top: 100px;
+    left: 0; */
+    z-index: 1;
+    /* transition: all .3s ease-out;
+    background-color: saddlebrown; */
+    /* width: 300px;
+    cursor: pointer;
+    background-color: slateblue; */
+}
+
+
+/* #menu .sort-btn.show li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+} */
+
+
+.box {
+    padding-top: 180px;
+    position: relative;
+}
+
+.image-bgr{
+    background-image: url(./img/2.png);
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+    z-index: -1;
+    position: absolute;
+    top: -120px;
+    left: -80px;
+}
+.shadow-image{
+    background-color: rgba(255,255,255,.7);
+    height: 300px;
+    width: 300px;
+}
+
+.line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 73%;
+}
+.one,
+.two,
+.three,
+.four{
+    height: 24px;
+    margin: 0;
+}
+
+.one{
+    width: 313px;
+    background-color: rgb(28,57,53);
+}
+
+.two{
+    width: 184px;
+    background-color: rgb(144,153,134);
+}
+
+.three{
+    width: 119px;
+    background-color: rgb(203,181,156);
+}
+
+.four{
+    width: 91px;
+    background-color: rgb(153,104,72);
+}
+
+
+.main-book{
+    display: flex;
+    padding: 10px 30px;
+}
+
+.image img {
+    height: 200px;
+}
+
+
+.book-inf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+   
+}
+
+.title-book{
+    width: 60%;
+    padding-left: 20px;
+    flex-wrap: wrap;
+}
+.button-others{
+    display: flex;
+    justify-content: space-around;
+}
+
+.others-btn a:hover{
+    color: rgb(153,104,72);
+    background-color: rgb(144,153,134);
+}
+
+
+/* .calendar{
+    position: absolute;
+    right: 20px;
+} 
+.calendar input{
+    padding: 8px 10px; 
+    font-size: 1.2em;
+    background: rgb(203,181,156);
+    border: none;
+}
+
+/* .calendar input:hover{
+    border: palevioletred;
+} */
+/* #datepicker{
+    border: none;
+}
+.calendarinput[type="date"]::-webkit-calendar-picker-indicator,
+.calendarinput[type="date"]::-webkit-inner-spin-button {
+    display: none;
+    appearance: none;
+} */ 
+
+
+
+
+
+footer{
+    height: 180px;
+    background-color: rgb(28, 57, 53);
+}
