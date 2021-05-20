@@ -1,10 +1,18 @@
 
-const sortBtn = document.getElementById("sortBtn");
 
+const accordion = (triggerButton) => {
 
-sortBtn.addEventListener("click", function(){
-    sortBtn.classList.toggle("show");
+  const sortBtn = document.querySelector(triggerButton);
+
+  sortBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+  
+    sortBtn.classList.toggle('sort-btn_active');
+    sortBtn.nextElementSibling.classList.toggle('sort-choice_active');
   });
+};
+
+accordion('.sort-btn');
 
   // (function () {
   //   let today = new Date();
